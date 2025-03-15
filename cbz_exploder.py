@@ -41,8 +41,8 @@ for file in os.listdir(directory):
                 for file in files:
                             
                     # Create directory inside output dir for each volume to organise all pages
-                    if not os.path.exists(f"{output_dir_path}/{title} {vol_no}"):
-                        os.makedirs(f"{output_dir_path}/{title} {vol_no}")
+                    if not os.path.exists(f"{output_dir_path}/{title} Volume {vol_no}"):
+                        os.makedirs(f"{output_dir_path}/{title} Volume {vol_no}")
                         
                     os.rename(os.path.join(root, file), os.path.join(output_dir_path, f"{title} Volume {vol_no}/C{chap_no}_{chap_minor_part}_{file}"))
                 
